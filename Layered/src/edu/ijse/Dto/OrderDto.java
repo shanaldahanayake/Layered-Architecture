@@ -15,7 +15,15 @@ public class OrderDto {
     private String custID;
     private String date;
 
-    private ArrayList<OrderDetailDto> orderDetailDto;
+    private ArrayList<OrderDetailDto> orderDetailDtos;
+
+    public ArrayList<OrderDetailDto> getOrderDetailDtos() {
+        return orderDetailDtos;
+    }
+
+    public void setOrderDetailDtos(ArrayList<OrderDetailDto> orderDetailDtos) {
+        this.orderDetailDtos = orderDetailDtos;
+    }
     
     public OrderDto() {
     }
@@ -72,4 +80,6 @@ public class OrderDto {
     public String toString() {
         return "OrderDto{" + "orderId=" + orderId + ", custID=" + custID + ", date=" + date + '}';
     }
+
+    
 }

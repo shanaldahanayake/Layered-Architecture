@@ -4,6 +4,7 @@
  */
 package edu.ijse;
 import edu.ijse.view.ItemView;
+import edu.ijse.view.OrderView;
 
 /**
  *
@@ -16,7 +17,7 @@ public class Layered {
      */
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        new ItemView().setVisible(true);
+        new OrderView().setVisible(true);
     }
     
 }
