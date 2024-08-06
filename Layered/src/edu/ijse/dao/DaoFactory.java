@@ -4,6 +4,7 @@
  */
 package edu.ijse.dao;
 
+import edu.ijse.dao.custom.impl.CustomerDaoImpl;
 import edu.ijse.dao.custom.impl.ItemDaoImpl;
 
 /**
@@ -26,7 +27,8 @@ public class DaoFactory {
         switch (type) {
             case ITEM:
                 return new ItemDaoImpl();
-                
+            case CUSTOMER:
+                return new CustomerDaoImpl();
             default:
                 return null;
         }
